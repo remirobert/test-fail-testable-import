@@ -1,0 +1,8 @@
+InvocationInfo {"buildId":"d20b8284-d776-4918-92f3-537f8cb96cb7","superConsoleEnabled":true,"isDaemon":true,"subCommand":"testcommand","commandArgs":["test",":app"],"unexpandedCommandArgs":["test",":app"],"buckLogDir":"buck-out/log","timestampMillis":1513923260286}
+FileDelete {"timestamp":1513923260327,"filename":"WatchmanPathEvent{cellPath=/Users/remirobert/dev/Dog-project, kind=DELETE, path=app.xcodeproj/project.xcworkspace/xcuserdata/remirobert.xcuserdatad/.dat.nosynceaee.f9xU5D}"}
+ParseStarted {"timestamp":1513923261103}
+ParseFinished {"timestamp":1513923261107}
+ParseStarted {"timestamp":1513923261111}
+ParseFinished {"timestamp":1513923261125}
+Cache.Stats {"cacheHitsPerMode":{"dir":0},"cacheErrorsPerMode":{"dir":0},"totalCacheHits":0,"totalCacheErrors":0,"totalCacheMisses":0,"totalCacheIgnores":0,"totalCacheLocalKeyUnchangedHits":0,"successUploadCount":0,"failureUploadCount":0}
+ExitCode {"exitCode":-1}

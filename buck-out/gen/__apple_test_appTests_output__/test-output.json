@@ -1,0 +1,10 @@
+{"scheme":null,"workspace":null,"timestamp":1513923920.6027751,"event":"begin-action","project":null,"name":"run-tests"}
+{"message":"Collecting info for testables...","timestamp":1513923920.6030619,"level":"Info","event":"begin-status"}
+{"message":"Collecting info for testables...","timestamp":1513923921.7650871,"level":"Info","event":"end-status"}
+{"bundleName":"appTests.xctest","deviceName":"iPhone 5s","event":"begin-ocunit","targetName":"\/Users\/remirobert\/dev\/Dog-project\/buck-out\/gen\/appTests#apple-test-bundle,dwarf,no-include-frameworks,no-linkermap\/appTests.xctest","testType":"logic-test","sdkName":"iphonesimulator11.2","timestamp":1513923921.7725439}
+{"event":"begin-test-suite","suite":"Toplevel Test Suite","timestamp":1513923922.193295}
+{"test":"-[appTests testExample]","className":"appTests","timestamp":1513923922.197027,"event":"begin-test","methodName":"testExample"}
+{"result":"success","exceptions":[],"test":"-[appTests testExample]","className":"appTests","event":"end-test","methodName":"testExample","succeeded":true,"output":"","totalDuration":0.0044249892234802246,"timestamp":1513923922.1981611}
+{"suite":"Toplevel Test Suite","testCaseCount":1,"event":"end-test-suite","totalFailureCount":0,"totalDuration":0.0050139427185058594,"unexpectedExceptionCount":0,"timestamp":1513923922.1983089,"testDuration":0.0044249892234802246}
+{"bundleName":"appTests.xctest","deviceName":"iPhone 5s","succeeded":true,"event":"end-ocunit","message":null,"targetName":"\/Users\/remirobert\/dev\/Dog-project\/buck-out\/gen\/appTests#apple-test-bundle,dwarf,no-include-frameworks,no-linkermap\/appTests.xctest","testType":"logic-test","sdkName":"iphonesimulator11.2","timestamp":1513923922.27865}
+{"scheme":null,"succeeded":true,"event":"end-action","workspace":null,"project":null,"duration":1.6761162990005687,"timestamp":1513923922.278903,"name":"run-tests"}

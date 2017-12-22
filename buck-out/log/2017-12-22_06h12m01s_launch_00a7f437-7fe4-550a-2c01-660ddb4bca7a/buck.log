@@ -1,0 +1,178 @@
+[2017-12-22 14:12:01.629][debug][command:null][tid:01][com.sun.jna.Platform] null
+java.io.FileNotFoundException: /proc/self/exe (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:124)
+	at com.sun.jna.ELFAnalyser.runDetection(ELFAnalyser.java:109)
+	at com.sun.jna.ELFAnalyser.analyse(ELFAnalyser.java:36)
+	at com.sun.jna.Platform.isSoftFloat(Platform.java:259)
+	at com.sun.jna.Platform.<clinit>(Platform.java:133)
+	at com.sun.jna.Native.loadNativeDispatchLibraryFromClasspath(Native.java:936)
+	at com.sun.jna.Native.loadNativeDispatchLibrary(Native.java:922)
+	at com.sun.jna.Native.<clinit>(Native.java:190)
+	at com.sun.jna.Pointer.<clinit>(Pointer.java:54)
+	at com.facebook.buck.cli.Main.<clinit>(Main.java:224)
+	at com.facebook.buck.cli.Main$DaemonBootstrap.main(Main.java:1735)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.facebook.buck.cli.bootstrapper.ClassLoaderBootstrapper.main(ClassLoaderBootstrapper.java:55)
+
+[2017-12-22 14:12:02.042][debug][command:null][tid:01][com.sun.jna.Platform] null
+java.io.FileNotFoundException: /proc/self/exe (No such file or directory)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:124)
+	at com.sun.jna.ELFAnalyser.runDetection(ELFAnalyser.java:109)
+	at com.sun.jna.ELFAnalyser.analyse(ELFAnalyser.java:36)
+	at com.sun.jna.Platform.isSoftFloat(Platform.java:259)
+	at com.sun.jna.Platform.getNativeLibraryResourcePrefix(Platform.java:287)
+	at com.sun.jna.Platform.getNativeLibraryResourcePrefix(Platform.java:276)
+	at com.sun.jna.Platform.<clinit>(Platform.java:134)
+	at com.sun.jna.Native.loadNativeDispatchLibraryFromClasspath(Native.java:936)
+	at com.sun.jna.Native.loadNativeDispatchLibrary(Native.java:922)
+	at com.sun.jna.Native.<clinit>(Native.java:190)
+	at com.sun.jna.Pointer.<clinit>(Pointer.java:54)
+	at com.facebook.buck.cli.Main.<clinit>(Main.java:224)
+	at com.facebook.buck.cli.Main$DaemonBootstrap.main(Main.java:1735)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.facebook.buck.cli.bootstrapper.ClassLoaderBootstrapper.main(ClassLoaderBootstrapper.java:55)
+
+[2017-12-22 14:12:02.174][info ][command:null][tid:01][com.facebook.buck.cli.HangMonitor] HangMonitorAutoStart
+[2017-12-22 14:12:02.320][debug][command:null][tid:01][com.google.common.util.concurrent.ServiceManager] Starting HangMonitor [RUNNING].
+[2017-12-22 14:12:02.321][debug][command:null][tid:01][com.google.common.util.concurrent.ServiceManager] Started HangMonitor [RUNNING] in 20.63 ms.
+[2017-12-22 14:12:02.369][info ][command:null][tid:01][com.facebook.buck.cli.Main] enabling background process killing for buckd
+[2017-12-22 14:12:02.376][info ][command:null][tid:01][com.facebook.buck.cli.Main] enabled background process killing for buckd
+[2017-12-22 14:12:02.379][info ][command:null][tid:01][com.facebook.buck.cli.Main] initialized bg session killer
+[2017-12-22 14:12:02.470][debug][command:null][tid:13][com.martiansoftware.nailgun.NGSession] Waiting for first client to connect
+[2017-12-22 14:12:02.477][debug][command:null][tid:13][com.martiansoftware.nailgun.NGSession] Client connected
+[2017-12-22 14:12:02.477][debug][command:null][tid:14][com.martiansoftware.nailgun.NGSession] Waiting for first client to connect
+[2017-12-22 14:12:02.486][debug][command:null][tid:13][com.martiansoftware.nailgun.NGSession] Tearing down client socket
+[2017-12-22 14:12:02.487][debug][command:null][tid:13][com.martiansoftware.nailgun.NGSession] Flushing client socket
+[2017-12-22 14:12:02.487][warn ][command:null][tid:15][com.martiansoftware.nailgun.NGInputStream] Nailgun client read future was interrupted
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.martiansoftware.nailgun.NGInputStream$1.run(NGInputStream.java:91)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2017-12-22 14:12:02.487][debug][command:null][tid:13][com.martiansoftware.nailgun.NGSession] Error shutting down socket I/O (this is expected if the client disconnected already)
+java.io.IOException: com.sun.jna.LastErrorException: [57] Socket is not connected
+	at com.martiansoftware.nailgun.NGUnixDomainSocket.doShutdown(NGUnixDomainSocket.java:74)
+	at com.martiansoftware.nailgun.NGUnixDomainSocket.shutdownInput(NGUnixDomainSocket.java:60)
+	at com.martiansoftware.nailgun.NGSession.run(NGSession.java:375)
+Caused by: com.sun.jna.LastErrorException: [57] Socket is not connected
+	at com.martiansoftware.nailgun.NGUnixDomainSocketLibrary.shutdown(Native Method)
+	at com.martiansoftware.nailgun.NGUnixDomainSocket.doShutdown(NGUnixDomainSocket.java:71)
+	... 2 more
+
+[2017-12-22 14:12:02.488][debug][command:null][tid:15][com.martiansoftware.nailgun.NGInputStream] Nailgun client read shutting down
+[2017-12-22 14:12:02.488][debug][command:null][tid:13][com.martiansoftware.nailgun.NGSession] Closing client socket
+[2017-12-22 14:12:02.489][debug][command:null][tid:13][com.martiansoftware.nailgun.NGSession] Finished tearing down client socket
+[2017-12-22 14:12:02.489][debug][command:null][tid:13][com.martiansoftware.nailgun.NGSession] Waiting for next client to connect
+[2017-12-22 14:12:02.489][info ][command:null][tid:13][com.martiansoftware.nailgun.NGSession] NGSession shutting down
+[2017-12-22 14:12:02.491][debug][command:null][tid:14][com.martiansoftware.nailgun.NGSession] Client connected
+[2017-12-22 14:12:02.496][debug][command:null][tid:19][com.martiansoftware.nailgun.NGSession] Waiting for first client to connect
+[2017-12-22 14:12:02.747][debug][command:null][tid:14][com.facebook.buck.cli.Main] Rotating log.
+[2017-12-22 14:12:02.754][debug][command:null][tid:14][com.facebook.buck.cli.Main] Starting up (build date 2017-11-17 08:34:27 +0800, rev v2017.11.16.01), args: [build, :app]
+[2017-12-22 14:12:02.757][debug][command:null][tid:14][com.facebook.buck.cli.Main] System properties: {java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, jnidispatch.path=/Users/remirobert/dev/Dog-project/.buckd/tmp/buck_run.On_K6F/jna--36351663/jna6844077100917419115.tmp, os.name=Mac OS X, buck.enable_objc=true, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/classes, pf4j.pluginsDir=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules, buck.resource_lock_path=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/.buck_lock, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_152-b16, jna.loaded=true, buck.testrunner_classes=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/testrunner_classes, buck.logging_config_file=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/logging_config_file, buck.path_to_sh_binary_template=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/path_to_sh_binary_template, user.name=remirobert, socksProxyHost=127.0.0.1, buck.path_to_pywatchman=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/path_to_pywatchman, buck.report_generator_jar=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/report_generator_jar, buck.git_commit=v2017.11.16.01, user.language=en, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib, java.version=1.8.0_152, user.timezone=Asia/Shanghai, buck.test_util_no_tests_dir=true, sun.arch.data.model=64, http.nonProxyHosts=127.0.0.1|localhost|*.localhost|192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, file.separator=/, java.specification.name=Java Platform API Specification, buck.jacoco_agent_jar=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/jacoco_agent_jar, java.class.version=52.0, user.country=FR, buck.binary_hash=63c9781095d8ee3e98baa3f5efe2d99c, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre, buck.fix_script=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/fix_script, java.vm.info=mixed mode, os.version=10.13.2, buck.external_executor_jar=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/external_executor_jar, buck.version_uid=v2017.11.16.01, org.eclipse.jetty.util.log.class=org.eclipse.jetty.util.log.JavaUtilLog, path.separator=:, java.vm.version=25.152-b16, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.io.unicode.encoding=UnicodeBig, awt.toolkit=sun.lwawt.macosx.LWCToolkit, buck.buck_build_type_info=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck_build_type_info, socksNonProxyHosts=127.0.0.1|localhost|*.localhost|192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8, ftp.nonProxyHosts=127.0.0.1|localhost|*.localhost|192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8, buck.dx=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/dx, buck.git_commit_timestamp=1510878867, user.home=/Users/remirobert, socksProxyPort=1086, java.specification.vendor=Oracle Corporation, buck.git_dirty=0, java.library.path=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01, java.vendor.url=http://java.oracle.com/, java.vm.vendor=Oracle Corporation, gopherProxySet=false, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.facebook.buck.cli.bootstrapper.ClassLoaderBootstrapper com.facebook.buck.cli.Main$DaemonBootstrap local:.buckd/sock 120000, java.class.path=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/bootstrapper_jar, buck.buckd_dir=/Users/remirobert/dev/Dog-project/.buckd, buck.path_to_pathlib_py=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/pathlib.py, buck.buckd_launch_time_nanos=128610981335429, java.vm.specification.name=Java Virtual Machine Specification, com.martiansoftware.nailgun.NGServer.outputPath=/Users/remirobert/dev/Dog-project/.buckd/tmp/buck_run.On_K6F/ngserver-out, java.vm.specification.version=1.8, sun.cpu.endian=little, buck.path_to_rawmanifest_py=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/rawmanifest.py, sun.os.patch.level=unknown, java.awt.headless=true, java.io.tmpdir=/Users/remirobert/dev/Dog-project/.buckd/tmp/buck_run.On_K6F, buck.android_agent_path=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/android_agent_path, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, buck.path_to_python_dsl=, jna.platform.library.path=/usr/lib:/usr/lib, os.arch=x86_64, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, buck.path_to_pex=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/path_to_pex, java.ext.dirs=/Users/remirobert/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, java.util.logging.config.class=com.facebook.buck.cli.bootstrapper.LogConfig, user.dir=/Users/remirobert/dev/Dog-project, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, buck.path_to_typing=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/path_to_typing, buck.native_exopackage_fake_path=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/native_exopackage_fake_path, file.encoding=UTF-8, java.specification.version=1.8}
+[2017-12-22 14:12:02.829][info ][command:null][tid:14][org.pf4j.DefaultPluginStatusProvider] Enabled plugins: []
+[2017-12-22 14:12:02.829][info ][command:null][tid:14][org.pf4j.DefaultPluginStatusProvider] Disabled plugins: []
+[2017-12-22 14:12:02.836][info ][command:null][tid:14][org.pf4j.DefaultPluginManager] PF4J version 0.0.0 in 'deployment' mode
+[2017-12-22 14:12:02.836][debug][command:null][tid:14][org.pf4j.AbstractPluginManager] Lookup plugins in '/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules'
+[2017-12-22 14:12:02.838][debug][command:null][tid:14][org.pf4j.AbstractPluginManager] Found 1 possible plugins: [/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules/ziprules.jar]
+[2017-12-22 14:12:02.839][debug][command:null][tid:14][org.pf4j.AbstractPluginManager] Use 'org.pf4j.CompoundPluginDescriptorFinder@6d0bf349' to find plugins descriptors
+[2017-12-22 14:12:02.839][debug][command:null][tid:14][org.pf4j.AbstractPluginManager] Finding plugin descriptor for plugin '/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules/ziprules.jar'
+[2017-12-22 14:12:02.839][debug][command:null][tid:14][org.pf4j.CompoundPluginDescriptorFinder] 'org.pf4j.ManifestPluginDescriptorFinder@431d13fb' is applicable for plugin '/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules/ziprules.jar'
+[2017-12-22 14:12:02.842][debug][command:null][tid:14][org.pf4j.AbstractPluginManager] Found descriptor PluginDescriptor [pluginId=com.facebook.buck.zip.ziprules, pluginClass=com.facebook.buck.zip.rules.ZipRulesModuleAdapterPlugin, version=0.0.1, provider=null, dependencies=[], description=, requires=*, license=null]
+[2017-12-22 14:12:02.842][debug][command:null][tid:14][org.pf4j.AbstractPluginManager] Class 'com.facebook.buck.zip.rules.ZipRulesModuleAdapterPlugin' for plugin '/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules/ziprules.jar'
+[2017-12-22 14:12:02.843][debug][command:null][tid:14][org.pf4j.AbstractPluginManager] Loading plugin '/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules/ziprules.jar'
+[2017-12-22 14:12:02.843][debug][command:null][tid:14][org.pf4j.PluginClassLoader] Add 'file:/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules/ziprules.jar'
+[2017-12-22 14:12:02.843][debug][command:null][tid:14][org.pf4j.AbstractPluginManager] Loaded plugin '/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules/ziprules.jar' with class loader 'org.pf4j.PluginClassLoader@5395c84d'
+[2017-12-22 14:12:02.844][debug][command:null][tid:14][org.pf4j.AbstractPluginManager] Creating wrapper for plugin '/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules/ziprules.jar'
+[2017-12-22 14:12:02.846][debug][command:null][tid:14][org.pf4j.AbstractPluginManager] Created wrapper 'PluginWrapper [descriptor=PluginDescriptor [pluginId=com.facebook.buck.zip.ziprules, pluginClass=com.facebook.buck.zip.rules.ZipRulesModuleAdapterPlugin, version=0.0.1, provider=null, dependencies=[], description=, requires=*, license=null], pluginPath=/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules/ziprules.jar]' for plugin '/Users/remirobert/dev/Dog-project/.buckd/resources/v2017.11.16.01/buck-modules/ziprules.jar'
+[2017-12-22 14:12:02.848][debug][command:null][tid:14][org.pf4j.DependencyResolver] Graph: 
+   com.facebook.buck.zip.ziprules -> []
+[2017-12-22 14:12:02.848][debug][command:null][tid:14][org.pf4j.DependencyResolver] Plugins order: [com.facebook.buck.zip.ziprules]
+[2017-12-22 14:12:02.849][info ][command:null][tid:14][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.zip.ziprules@0.0.1' resolved
+[2017-12-22 14:12:02.849][info ][command:null][tid:14][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.zip.ziprules@0.0.1'
+[2017-12-22 14:12:02.849][debug][command:null][tid:14][org.pf4j.DefaultExtensionFactory] Create instance for plugin 'com.facebook.buck.zip.rules.ZipRulesModuleAdapterPlugin'
+[2017-12-22 14:12:02.857][debug][command:null][tid:14][com.facebook.buck.util.config.Configs] Loading configuration for /Users/remirobert/dev/Dog-project
+[2017-12-22 14:12:02.920][debug][command:null][tid:14][com.facebook.buck.util.config.Configs] Loaded a configuration file /Users/remirobert/dev/Dog-project/.buckconfig: {apple={xctool_path=/usr/local/bin/xctool}, cache={mode=dir, dir_max_size=512MB}, cxx={cflags=-std=gnu11, cxxflags=-std=c++14 -stdlib=libc++, default_platform=iphonesimulator-x86_64, combined_preprocess_and_compile=true}, project={ide=xcode, ignore=.git, .hg, .buckd}, swift={version=4.0}}
+[2017-12-22 14:12:02.922][debug][command:null][tid:14][com.facebook.buck.util.config.Configs] Adding configuration overrides RawConfig{values={}}
+[2017-12-22 14:12:03.009][debug][command:null][tid:14][com.facebook.buck.util.config.Configs] Loading configuration for /Users/remirobert/dev/Dog-project
+[2017-12-22 14:12:03.010][debug][command:null][tid:14][com.facebook.buck.util.config.Configs] Loaded a configuration file /Users/remirobert/dev/Dog-project/.buckconfig: {apple={xctool_path=/usr/local/bin/xctool}, cache={mode=dir, dir_max_size=512MB}, cxx={cflags=-std=gnu11, cxxflags=-std=c++14 -stdlib=libc++, default_platform=iphonesimulator-x86_64, combined_preprocess_and_compile=true}, project={ide=xcode, ignore=.git, .hg, .buckd}, swift={version=4.0}}
+[2017-12-22 14:12:03.011][debug][command:null][tid:14][com.facebook.buck.util.config.Configs] Adding configuration overrides RawConfig{values={}}
+[2017-12-22 14:12:03.302][debug][command:null][tid:14][com.facebook.buck.apple.AppleToolchainDiscovery] Searching for Xcode toolchains under /Applications/Xcode.app/Contents/Developer/Toolchains
+[2017-12-22 14:12:03.302][debug][command:null][tid:14][com.facebook.buck.apple.AppleToolchainDiscovery] Searching for Xcode toolchains in /Applications/Xcode.app/Contents/Developer/Toolchains
+[2017-12-22 14:12:03.308][debug][command:null][tid:14][com.facebook.buck.apple.AppleToolchainDiscovery] Getting identifier for for Xcode toolchain under /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain
+[2017-12-22 14:12:03.329][debug][command:null][tid:14][com.facebook.buck.apple.AppleToolchainDiscovery] Mapped SDK identifier com.apple.dt.toolchain.XcodeDefault to path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain
+[2017-12-22 14:12:03.339][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Searching for Xcode platforms under /Applications/Xcode.app/Contents/Developer/Platforms
+[2017-12-22 14:12:03.343][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Searching for Xcode SDKs in /Applications/Xcode.app/Contents/Developer/Platforms
+[2017-12-22 14:12:03.344][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk
+[2017-12-22 14:12:03.354][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Found SDK AppleSdk{name=appletvos11.2, version=11.2, applePlatform=ApplePlatform{name=appletvos, provisioningProfileName=tvOS, architectures=[arm64], minVersionFlagPrefix=-mtvos-version-min=, appIncludesFrameworks=false}, architectures=[arm64], toolchains=[AppleToolchain{identifier=com.apple.dt.toolchain.XcodeDefault, path=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain}]}
+[2017-12-22 14:12:03.358][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk
+[2017-12-22 14:12:03.358][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Skipping already scanned SDK directory /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk
+[2017-12-22 14:12:03.359][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk
+[2017-12-22 14:12:03.360][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Found SDK AppleSdk{name=iphoneos11.2, version=11.2, applePlatform=ApplePlatform{name=iphoneos, swiftName=ios, provisioningProfileName=iOS, architectures=[armv7, arm64], minVersionFlagPrefix=-mios-version-min=, stubBinaryPath=Library/Application Support/WatchKit/WK, appIncludesFrameworks=false}, architectures=[armv7, arm64], toolchains=[AppleToolchain{identifier=com.apple.dt.toolchain.XcodeDefault, path=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain}]}
+[2017-12-22 14:12:03.361][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk
+[2017-12-22 14:12:03.361][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Skipping already scanned SDK directory /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk
+[2017-12-22 14:12:03.361][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk
+[2017-12-22 14:12:03.363][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Found SDK AppleSdk{name=watchos4.2, version=4.2, applePlatform=ApplePlatform{name=watchos, provisioningProfileName=iOS, architectures=[armv7k], minVersionFlagPrefix=-mwatchos-version-min=, stubBinaryPath=Library/Application Support/WatchKit/WK, appIncludesFrameworks=false}, architectures=[armv7k], toolchains=[AppleToolchain{identifier=com.apple.dt.toolchain.XcodeDefault, path=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain}]}
+[2017-12-22 14:12:03.364][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS.sdk
+[2017-12-22 14:12:03.364][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Skipping already scanned SDK directory /Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS.sdk
+[2017-12-22 14:12:03.365][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk
+[2017-12-22 14:12:03.486][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Found SDK AppleSdk{name=macosx10.13, version=10.13, applePlatform=ApplePlatform{name=macosx, architectures=[i386, x86_64], minVersionFlagPrefix=-mmacosx-version-min=, appIncludesFrameworks=true}, architectures=[i386, x86_64], toolchains=[AppleToolchain{identifier=com.apple.dt.toolchain.XcodeDefault, path=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain}]}
+[2017-12-22 14:12:03.487][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+[2017-12-22 14:12:03.487][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Skipping already scanned SDK directory /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+[2017-12-22 14:12:03.488][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.2.sdk
+[2017-12-22 14:12:03.490][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Found SDK AppleSdk{name=watchsimulator4.2, version=4.2, applePlatform=ApplePlatform{name=watchsimulator, architectures=[i386], minVersionFlagPrefix=-mwatchos-simulator-version-min=, stubBinaryPath=Library/Application Support/WatchKit/WK, appIncludesFrameworks=false}, architectures=[i386], toolchains=[AppleToolchain{identifier=com.apple.dt.toolchain.XcodeDefault, path=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain}]}
+[2017-12-22 14:12:03.491][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator.sdk
+[2017-12-22 14:12:03.491][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Skipping already scanned SDK directory /Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator.sdk
+[2017-12-22 14:12:03.492][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator.sdk
+[2017-12-22 14:12:03.494][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Found SDK AppleSdk{name=appletvsimulator11.2, version=11.2, applePlatform=ApplePlatform{name=appletvsimulator, swiftName=tvos, architectures=[x86_64], minVersionFlagPrefix=-mtvos-simulator-version-min=, appIncludesFrameworks=false}, architectures=[x86_64], toolchains=[AppleToolchain{identifier=com.apple.dt.toolchain.XcodeDefault, path=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain}]}
+[2017-12-22 14:12:03.494][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator11.2.sdk
+[2017-12-22 14:12:03.494][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Skipping already scanned SDK directory /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator.sdk
+[2017-12-22 14:12:03.501][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
+[2017-12-22 14:12:03.504][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Found SDK AppleSdk{name=iphonesimulator11.2, version=11.2, applePlatform=ApplePlatform{name=iphonesimulator, swiftName=ios, architectures=[i386, x86_64], minVersionFlagPrefix=-mios-simulator-version-min=, stubBinaryPath=Library/Application Support/WatchKit/WK, appIncludesFrameworks=false}, architectures=[i386, x86_64], toolchains=[AppleToolchain{identifier=com.apple.dt.toolchain.XcodeDefault, path=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain}]}
+[2017-12-22 14:12:03.504][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Fetching SDK name for /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk
+[2017-12-22 14:12:03.504][debug][command:null][tid:14][com.facebook.buck.apple.AppleSdkDiscovery] Skipping already scanned SDK directory /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
+[2017-12-22 14:12:03.536][info ][command:null][tid:14][com.facebook.buck.io.Watchman] Creating for: [/Users/remirobert/dev/Dog-project]
+[2017-12-22 14:12:03.600][debug][command:null][tid:14][com.facebook.buck.io.ExecutableFinder] Executable 'watchman' mapped to 'Optional[/usr/local/bin/watchman]'
+[2017-12-22 14:12:03.601][debug][command:null][tid:14][com.facebook.buck.util.ListeningProcessExecutor] Launching process with params ProcessExecutorParams{command=[/usr/local/bin/watchman, --output-encoding=bser, get-sockname]}
+[2017-12-22 14:12:03.671][debug][command:null][tid:14][com.facebook.buck.util.ListeningProcessExecutor] Successfully launched process com.zaxxer.nuprocess.osx.OsxProcess@285ea74c
+[2017-12-22 14:12:03.671][debug][command:null][tid:14][com.facebook.buck.util.ListeningProcessExecutor] Waiting for process com.facebook.buck.util.ListeningProcessExecutor$LaunchedProcessImpl@4b43c41d timeout 1000000000 NANOSECONDS
+[2017-12-22 14:12:03.743][debug][command:null][tid:14][com.facebook.buck.util.ListeningProcessExecutor] Wait for process returned 0
+[2017-12-22 14:12:03.751][debug][command:null][tid:14][com.facebook.buck.io.Watchman] Waited 71 ms for Watchman command get-sockname, exit code 0
+[2017-12-22 14:12:03.775][debug][command:null][tid:14][com.facebook.buck.io.Watchman] stdout of command: {sockname=/usr/local/var/run/watchman/remirobert-state/sock, version=4.9.0}
+[2017-12-22 14:12:03.775][info ][command:null][tid:14][com.facebook.buck.io.Watchman] Connecting to Watchman version 4.9.0 at /usr/local/var/run/watchman/remirobert-state/sock
+[2017-12-22 14:12:03.811][debug][command:null][tid:14][com.facebook.buck.io.Watchman] Connected to Watchman
+[2017-12-22 14:12:03.817][debug][command:null][tid:26][com.facebook.buck.io.WatchmanTransportClient] Sending query: [version, {required=[cmd-watch-project], optional=[term-dirname, cmd-watch-project, wildmatch, wildmatch_multislash, glob_generator, clock-sync-timeout]}]
+[2017-12-22 14:12:03.824][debug][command:null][tid:14][com.facebook.buck.io.WatchmanTransportClient] Query [version, {required=[cmd-watch-project], optional=[term-dirname, cmd-watch-project, wildmatch, wildmatch_multislash, glob_generator, clock-sync-timeout]}] returned in 7 ms
+[2017-12-22 14:12:03.825][info ][command:null][tid:14][com.facebook.buck.io.Watchman] Took 13 ms to query capabilities {term-dirname=DIRNAME, cmd-watch-project=SUPPORTS_PROJECT_WATCH, wildmatch=WILDMATCH_GLOB, wildmatch_multislash=WILDMATCH_MULTISLASH, glob_generator=GLOB_GENERATOR, clock-sync-timeout=CLOCK_SYNC_TIMEOUT}
+[2017-12-22 14:12:03.827][debug][command:null][tid:14][com.facebook.buck.io.Watchman] Got capabilities response: {clock-sync-timeout=true, glob_generator=true, wildmatch_multislash=false, cmd-watch-project=true, wildmatch=true, term-dirname=true}
+[2017-12-22 14:12:03.828][debug][command:null][tid:14][com.facebook.buck.io.Watchman] Got Watchman capabilities: [CLOCK_SYNC_TIMEOUT, GLOB_GENERATOR, SUPPORTS_PROJECT_WATCH, WILDMATCH_GLOB, DIRNAME]
+[2017-12-22 14:12:03.828][info ][command:null][tid:14][com.facebook.buck.io.Watchman] Adding watchman root: /Users/remirobert/dev/Dog-project
+[2017-12-22 14:12:03.828][debug][command:null][tid:26][com.facebook.buck.io.WatchmanTransportClient] Sending query: [watch-project, /Users/remirobert/dev/Dog-project]
+[2017-12-22 14:12:03.890][debug][command:null][tid:14][com.facebook.buck.io.WatchmanTransportClient] Query [watch-project, /Users/remirobert/dev/Dog-project] returned in 61 ms
+[2017-12-22 14:12:03.890][debug][command:null][tid:26][com.facebook.buck.io.WatchmanTransportClient] Sending query: [watch-project, /Users/remirobert/dev/Dog-project]
+[2017-12-22 14:12:03.891][debug][command:null][tid:14][com.facebook.buck.io.WatchmanTransportClient] Query [watch-project, /Users/remirobert/dev/Dog-project] returned in 0 ms
+[2017-12-22 14:12:03.891][info ][command:null][tid:14][com.facebook.buck.io.Watchman] Took 63 ms to add root /Users/remirobert/dev/Dog-project
+[2017-12-22 14:12:03.900][debug][command:null][tid:26][com.facebook.buck.io.WatchmanTransportClient] Sending query: [clock, /Users/remirobert/dev/Dog-project, {sync_timeout=100}]
+[2017-12-22 14:12:03.910][debug][command:null][tid:14][com.facebook.buck.io.WatchmanTransportClient] Query [clock, /Users/remirobert/dev/Dog-project, {sync_timeout=100}] returned in 10 ms
+[2017-12-22 14:12:03.911][info ][command:null][tid:14][com.facebook.buck.io.Watchman] Took 10 ms to query for initial clock id Optional[c:1513586676:1188:9:3]
+[2017-12-22 14:12:03.911][debug][command:null][tid:14][com.facebook.buck.cli.Main] Watchman capabilities: [CLOCK_SYNC_TIMEOUT, GLOB_GENERATOR, SUPPORTS_PROJECT_WATCH, WILDMATCH_GLOB, DIRNAME] Project watches: {/Users/remirobert/dev/Dog-project=ProjectWatch{watchRoot=/Users/remirobert/dev/Dog-project}} Glob handler config: PYTHON Query timeout ms config: Optional.empty
+[2017-12-22 14:12:03.933][debug][command:null][tid:14][com.facebook.buck.cli.DaemonLifecycleManager] Starting up daemon for project root [/Users/remirobert/dev/Dog-project]
+[2017-12-22 14:12:04.690][warn ][command:null][tid:14][com.facebook.buck.cli.Daemon] Can't start web server
+[2017-12-22 14:12:04.692][debug][command:null][tid:14][com.facebook.buck.cli.Daemon] Using Watchman Cursor: {/Users/remirobert/dev/Dog-project=c:1513586676:1188:9:3}

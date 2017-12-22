@@ -1,0 +1,1 @@
+{"test :app":{"expectedNumberOfParsedRules":0,"expectedNumberOfParsedBUCKFiles":0},"test :app --verbose 10":{"expectedNumberOfParsedRules":0,"expectedNumberOfParsedBUCKFiles":0},"test :appTests":{"expectedNumberOfParsedRules":0,"expectedNumberOfParsedBUCKFiles":0},"build :app":{"expectedNumberOfParsedRules":9,"expectedNumberOfParsedBUCKFiles":1}}

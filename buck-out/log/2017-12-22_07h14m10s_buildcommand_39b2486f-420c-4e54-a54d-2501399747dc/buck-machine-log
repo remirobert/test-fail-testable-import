@@ -1,0 +1,6 @@
+InvocationInfo {"buildId":"39b2486f-420c-4e54-a54d-2501399747dc","superConsoleEnabled":true,"isDaemon":true,"subCommand":"buildcommand","commandArgs":["buid",":app"],"unexpandedCommandArgs":["buid",":app"],"buckLogDir":"buck-out/log","timestampMillis":1513926850305}
+ParseStarted {"timestamp":1513926851073}
+ParseFinished {"timestamp":1513926851080}
+BuildRuleEvent.Finished {"timestamp":1513926851105,"duration":{"wallMillisDuration":4},"status":"SUCCESS","cacheResult":{"type":"LOCAL_KEY_UNCHANGED_HIT"},"origin":"79da4976-3e8b-4fff-9f38-88a1b0b4e94e","ruleKeys":{"ruleKey":{"hashCode":"9f26883f670ca61849b2d4b1e81b218ec567f8a4"}},"successTypeName":"MATCHING_RULE_KEY","buildRule":{"type":"apple_bundle","name":"//:app#dwarf-and-dsym,no-include-frameworks"}}
+Cache.Stats {"cacheHitsPerMode":{"dir":0},"cacheErrorsPerMode":{"dir":0},"totalCacheHits":0,"totalCacheErrors":0,"totalCacheMisses":0,"totalCacheIgnores":0,"totalCacheLocalKeyUnchangedHits":1,"successUploadCount":0,"failureUploadCount":0}
+ExitCode {"exitCode":0}

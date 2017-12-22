@@ -1,0 +1,5 @@
+InvocationInfo {"buildId":"a0bd187e-0069-47e9-8967-1658d675a618","superConsoleEnabled":true,"isDaemon":true,"subCommand":"testcommand","commandArgs":["test",":appTests"],"unexpandedCommandArgs":["test",":appTests"],"buckLogDir":"buck-out/log","timestampMillis":1513923795863}
+ParseStarted {"timestamp":1513923796517}
+ParseFinished {"timestamp":1513923796521}
+Cache.Stats {"cacheHitsPerMode":{"dir":0},"cacheErrorsPerMode":{"dir":0},"totalCacheHits":0,"totalCacheErrors":0,"totalCacheMisses":0,"totalCacheIgnores":0,"totalCacheLocalKeyUnchangedHits":0,"successUploadCount":0,"failureUploadCount":0}
+ExitCode {"exitCode":-1}
